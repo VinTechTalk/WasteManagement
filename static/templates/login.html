@@ -1,0 +1,38 @@
+<html>
+<head>
+	
+	<script src="../static/jquery-3.4.1.js"></script>
+    <script src="../static/index.js"></script>
+    <link href="../static/main.css" rel="stylesheet" />
+</head>
+<body>
+   <!--  <h1>Login</h1> -->
+    <!-- {% for k,v in args.items() %}
+    <p>{{ k,v }}</p>
+    {% endfor %} -->
+    <!-- <a href="{{url_for('gconnect', state=args['state'])}}" class="btn btn-danger btn-block"><i class="fab fa-google"></i> Sign in with <b>Google</b></a> -->
+
+    <div id="divLogin" class="container">
+      <label>UserName</label> <input type= "text">
+      <label>Password</label> <input type= "Password">
+      <a href="{{url_for('gconnect', state=args['state'])}}" id='lnkGoogleSignIn' class="btn btn-danger btn-block"><i class="fab fa-google"></i> Sign in with <b>Google</b></a>
+      <button type="button" id = "btnLogin">Login</button>
+      <button type="button"  id = "btnRegister">Register</button> 
+  </div>
+
+<div></div>
+<div id="divRegister">
+
+  <label>FullName</label> <input id="txtFullName" type= "text">
+  <label>Email</label> <input id="txtEmail" type= "text">
+  <label>Password</label> <input id="txtRegisterPassword" type= "Password">
+  <button type="button"  id = "btnRegister2">Register</button> 
+
+<!-- <button>X</button> -->
+</div>
+
+
+
+
+</body>
+</html>
